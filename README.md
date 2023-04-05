@@ -1,4 +1,4 @@
-# Lord Of The Root Write-up
+# CTF #1 - Lord Of The Root Write-up
 As a LOTR fan I decided to start my CTF documentations by documenting the process of hacking this VulnHub Machine called **Lord Of The Root.** 
 
 But first, let's have a look to my setup:
@@ -10,6 +10,8 @@ But first, let's have a look to my setup:
 - And today, to season this CTF session... Let's play [**Sodom -  M-16.**](https://www.youtube.com/watch?v=T3_v7wPNj9w&ab_channel=ThrashtilDeath4K%28Fullalbums&lyrics%29)
 
 Now you are all set up and ready to go!
+
+## Recon
 
 I always like to run a fast/aggressive scan over the network with **Nmap.** To do so, I use this command:
 
@@ -116,6 +118,8 @@ AND BOOM! New port appears! Now we have the ***port 1337*** open and it's ***htt
 
     http://192.168.1.28:1337/
 
+## Enumeration
+
 Okey, lets run a **Nikto** scan:
 
     sudo nikto -h http://192.168.1.28:1337/ -C all
@@ -169,7 +173,7 @@ So let's decrypt the decrypted hash:
 
 Looks like we have a URL! Now we are talking business...
 
-
+## Exploitation
 
 We are now facing some kind of login page. And tha means... **DATABASES!** Let's try some **SQLi with SQLMAP.**
 
