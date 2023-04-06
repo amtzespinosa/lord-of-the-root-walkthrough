@@ -1,4 +1,4 @@
-# CTF #1 - Lord Of The Root Write-up
+# CTF #1 - Lord Of The Root
 As a LOTR fan I decided to start my CTF documentations by documenting the process of hacking this VulnHub Machine called **Lord Of The Root.** 
 
 But first, let's have a look to my setup:
