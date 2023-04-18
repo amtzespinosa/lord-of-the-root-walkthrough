@@ -258,3 +258,5 @@ And you should get back:
     uid=0(root) gid=0(root) groups=0(root),1000(smeagol)
 
 There you go, now we are root! And if we head to the `root`directory, we can find a `Flag.txt`. That is the proof we got root access. 
+
+Check my next adventure: [CTF #3 - Tr0ll](https://github.com/amtzespinosa/tr0ll-walkthrough)
